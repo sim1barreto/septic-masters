@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Environment variables — do NOT commit; copy from .env.example
+.env
+.env.local
+.env*.local
+
+# Logs
+*.log
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
