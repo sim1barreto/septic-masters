@@ -1,0 +1,43 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "septic-masters/page-hero",
+  "version": "1.0.0",
+  "title": "Page Hero",
+  "category": "septic-masters",
+  "description": "Reusable dark hero for inner pages with configurable label, headline, subtext, image, and badges.",
+  "supports": { "html": false },
+  "textdomain": "septic-masters",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "sectionLabel": {
+      "type": "string",
+      "default": "About Us"
+    },
+    "headline": {
+      "type": "string",
+      "default": "Built on Trust,\nDriven by Integrity"
+    },
+    "headlineGradient": {
+      "type": "string",
+      "default": "Driven by Integrity"
+    },
+    "subtext": {
+      "type": "string",
+      "default": "Septic Masters has been Central Texas's most trusted septic service company since 2009."
+    },
+    "imageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "badges": {
+      "type": "array",
+      "items": { "type": "object" },
+      "default": [
+        { "icon": "MapPin", "text": "50+ mile coverage" },
+        { "icon": "Clock", "text": "Fast response" },
+        { "icon": "CheckCircle", "text": "Licensed & insured" }
+      ]
+    }
+  }
+}

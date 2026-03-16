@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "septic-masters/trust-bar",
+  "version": "1.0.0",
+  "title": "Trust Bar",
+  "category": "septic-masters",
+  "description": "Animated statistics / trust bar on dark background.",
+  "supports": { "html": false },
+  "textdomain": "septic-masters",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "stats": {
+      "type": "array",
+      "items": { "type": "object" },
+      "default": [
+        { "iconName": "Clock", "value": 15, "suffix": "+", "label": "Years Experience", "color": "#25A55F" },
+        { "iconName": "ThumbsUp", "value": 500, "suffix": "+", "label": "Happy Customers", "color": "#4FD4A4" },
+        { "iconName": "Star", "value": 4.9, "suffix": "", "label": "Average Rating", "color": "#F4C542", "decimal": true },
+        { "iconName": "Shield", "value": 100, "suffix": "%", "label": "Licensed & Insured", "color": "#4FD4A4" },
+        { "iconName": "Award", "value": 24, "suffix": "/7", "label": "Emergency Service", "color": "#BE2026" }
+      ]
+    }
+  }
+}

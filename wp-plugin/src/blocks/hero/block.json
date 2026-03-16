@@ -1,0 +1,56 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "septic-masters/hero",
+  "version": "1.0.0",
+  "title": "Hero Section",
+  "category": "septic-masters",
+  "description": "Full-screen hero with headline, CTAs, trust points, and floating stats.",
+  "supports": { "html": false },
+  "textdomain": "septic-masters",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "badgeText": {
+      "type": "string",
+      "default": "24/7 Emergency Service Available"
+    },
+    "headline": {
+      "type": "string",
+      "default": "Central Texas' #1 Septic Service Experts"
+    },
+    "subheadline": {
+      "type": "string",
+      "default": "Professional septic pumping, inspections, and repairs. Fast, reliable, and done right the first time — backed by 15+ years of trusted service."
+    },
+    "phone": {
+      "type": "string",
+      "default": "(555) 123-4567"
+    },
+    "ctaText": {
+      "type": "string",
+      "default": "Get a Free Quote"
+    },
+    "ctaUrl": {
+      "type": "string",
+      "default": "/contact"
+    },
+    "heroImageUrl": {
+      "type": "string",
+      "default": "https://images.unsplash.com/photo-1586447950350-7424f8424fee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZXB0aWMlMjBzZXJ2aWNlJTIwdHJ1Y2slMjBwcm9mZXNzaW9uYWwlMjB0ZWNobmljaWFufGVufDF8fHx8MTc3MzM3NTM0Nnww&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    "trustPoints": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": ["Licensed & Insured", "Same-Day Service", "Free Estimates"]
+    },
+    "stats": {
+      "type": "array",
+      "items": { "type": "object" },
+      "default": [
+        { "label": "Response Time", "value": "< 2 Hours" },
+        { "label": "Satisfied Clients", "value": "500+" },
+        { "label": "Years Experience", "value": "15+" }
+      ]
+    }
+  }
+}

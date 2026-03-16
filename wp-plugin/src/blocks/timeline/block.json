@@ -1,0 +1,34 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "septic-masters/timeline",
+  "version": "1.0.0",
+  "title": "Timeline",
+  "category": "septic-masters",
+  "description": "Dark vertical timeline section showing company milestones.",
+  "supports": { "html": false },
+  "textdomain": "septic-masters",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "sectionLabel": {
+      "type": "string",
+      "default": "Our History"
+    },
+    "headline": {
+      "type": "string",
+      "default": "15 Years of Growth & Service"
+    },
+    "milestones": {
+      "type": "array",
+      "items": { "type": "object" },
+      "default": [
+        { "year": "2009", "event": "Founded by Mike Torres with one truck and a commitment to honest service" },
+        { "year": "2013", "event": "Expanded to 3 trucks and added drain field restoration services" },
+        { "year": "2016", "event": "Achieved BBB A+ rating and won Austin's Best Service Provider award" },
+        { "year": "2019", "event": "Added aerobic system installation and commercial grease trap services" },
+        { "year": "2022", "event": "Reached 500+ customers served with a 4.9-star average rating" },
+        { "year": "2025", "event": "Opened second service hub to better serve Georgetown & surrounding areas" }
+      ]
+    }
+  }
+}

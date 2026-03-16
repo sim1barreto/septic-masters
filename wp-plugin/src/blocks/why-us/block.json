@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "septic-masters/why-us",
+  "version": "1.0.0",
+  "title": "Why Choose Us",
+  "category": "septic-masters",
+  "description": "Two-column section with image, advantages grid, and CTA.",
+  "supports": { "html": false },
+  "textdomain": "septic-masters",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "sectionLabel": {
+      "type": "string",
+      "default": "Why Choose Us"
+    },
+    "headline": {
+      "type": "string",
+      "default": "We're Not Just Another Contractor"
+    },
+    "subtext": {
+      "type": "string",
+      "default": "We've built our reputation on trust, reliability, and exceptional service. When you choose Septic Masters, you're choosing a partner, not just a provider."
+    },
+    "techImageUrl": {
+      "type": "string",
+      "default": "https://images.unsplash.com/photo-1635221798248-8a3452ad07cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwbHVtYmluZyUyMHRlY2huaWNpYW4lMjBob21lJTIwc2VydmljZSUyMHByb2Zlc3Npb25hbCUyMHdvcmtlcnxlbnwxfHx8fDE3NzMzNzUzNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+    },
+    "advantages": {
+      "type": "array",
+      "items": { "type": "object" },
+      "default": [
+        { "iconName": "Clock", "title": "Fast Response Times", "description": "We respond within 2 hours and offer same-day service for most jobs.", "color": "#25A55F" },
+        { "iconName": "Shield", "title": "Fully Licensed & Insured", "description": "State-certified technicians. Your property and investment are fully protected.", "color": "#1E7A45" },
+        { "iconName": "Award", "title": "15+ Years of Expertise", "description": "Deep local knowledge of Central Texas soil, regulations, and system types.", "color": "#4FD4A4" },
+        { "iconName": "DollarSign", "title": "Upfront, Honest Pricing", "description": "No hidden fees. We provide clear estimates before any work begins.", "color": "#4FD4A4" },
+        { "iconName": "Users", "title": "Family-Owned Business", "description": "We treat your home like our own. Real people who truly care about quality.", "color": "#F4C542" },
+        { "iconName": "Leaf", "title": "Eco-Friendly Methods", "description": "Environmentally responsible disposal and green service practices throughout.", "color": "#25A55F" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "septic-masters/coverage-map",
+  "version": "1.0.0",
+  "title": "Coverage Map",
+  "category": "septic-masters",
+  "description": "Extended coverage section with additional area pills and a visual concentric-circle map.",
+  "supports": { "html": false },
+  "textdomain": "septic-masters",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "sectionLabel": {
+      "type": "string",
+      "default": "Extended Coverage"
+    },
+    "headline": {
+      "type": "string",
+      "default": "Also Serving These Communities"
+    },
+    "subtext": {
+      "type": "string",
+      "default": "Don't see your city listed? Call us — we likely serve your area or can accommodate your request with a small travel fee."
+    },
+    "phone": {
+      "type": "string",
+      "default": "(555) 123-4567"
+    },
+    "ctaUrl": {
+      "type": "string",
+      "default": "/contact"
+    },
+    "additionalAreas": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": [
+        "Kyle, TX", "Buda, TX", "Bastrop, TX", "Dripping Springs, TX",
+        "Wimberley, TX", "San Marcos, TX", "Liberty Hill, TX", "Hutto, TX",
+        "Taylor, TX", "Elgin, TX", "Lakeway, TX", "Bee Cave, TX",
+        "Manor, TX", "Sunset Valley, TX", "Rollingwood, TX", "West Lake Hills, TX"
+      ]
+    },
+    "mapCities": {
+      "type": "array",
+      "items": { "type": "object" },
+      "default": [
+        { "label": "Round Rock", "top": "15%", "left": "55%", "color": "#25A55F" },
+        { "label": "Cedar Park", "top": "25%", "left": "20%", "color": "#4FD4A4" },
+        { "label": "Georgetown", "top": "8%", "left": "45%", "color": "#F4C542" },
+        { "label": "Pflugerville", "top": "40%", "left": "72%", "color": "#4FD4A4" },
+        { "label": "Kyle", "top": "72%", "left": "55%", "color": "#25A55F" },
+        { "label": "Buda", "top": "78%", "left": "35%", "color": "#4FD4A4" },
+        { "label": "Leander", "top": "18%", "left": "28%", "color": "#1E7A45" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "septic-masters/about-story",
+  "version": "1.0.0",
+  "title": "About Story",
+  "category": "septic-masters",
+  "description": "Two-column story section with text, image, and floating stat cards.",
+  "supports": { "html": false },
+  "textdomain": "septic-masters",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "sectionLabel": {
+      "type": "string",
+      "default": "Our Story"
+    },
+    "headline": {
+      "type": "string",
+      "default": "From One Truck to Central Texas's Most Trusted Team"
+    },
+    "paragraphs": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": [
+        "In 2009, Mike Torres started Septic Masters with a single truck, a state license, and a frustration with how homeowners were being treated by other septic companies — overcharged, underinformed, and left without real solutions.",
+        "His simple philosophy: explain the problem clearly, do the work right, charge a fair price, and stand behind every job. Word spread fast. Within five years, we had a full team and were the top-rated septic company in Austin.",
+        "Today, Septic Masters serves hundreds of families across Central Texas. We've grown, but our values haven't changed. Every call is answered by a real person. Every job is done by a certified technician. Every customer gets the same honest service that built our reputation."
+      ]
+    },
+    "ctaText": {
+      "type": "string",
+      "default": "Work With Us"
+    },
+    "ctaUrl": {
+      "type": "string",
+      "default": "/contact"
+    },
+    "imageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "stats": {
+      "type": "array",
+      "items": { "type": "object" },
+      "default": [
+        { "value": "15+", "label": "Years in business" },
+        { "value": "500+", "label": "Customers served" },
+        { "value": "4.9★", "label": "Average rating" }
+      ]
+    }
+  }
+}

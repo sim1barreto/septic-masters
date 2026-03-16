@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "septic-masters/services",
+  "version": "1.0.0",
+  "title": "Services Grid",
+  "category": "septic-masters",
+  "description": "Responsive grid of septic service cards.",
+  "supports": { "html": false },
+  "textdomain": "septic-masters",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "sectionLabel": {
+      "type": "string",
+      "default": "Our Services"
+    },
+    "sectionTitle": {
+      "type": "string",
+      "default": "Complete Septic Solutions Under One Roof"
+    },
+    "sectionSubtitle": {
+      "type": "string",
+      "default": "From routine maintenance to full system installations, we handle every aspect of your septic system with expertise and care."
+    },
+    "services": {
+      "type": "array",
+      "items": { "type": "object" },
+      "default": [
+        { "iconName": "Droplets", "title": "Septic Tank Pumping", "description": "Regular pumping prevents system failures and backups. Our efficient process keeps your system running smoothly year-round.", "color": "#25A55F", "popular": true },
+        { "iconName": "Search", "title": "Septic Inspections", "description": "Comprehensive inspections with detailed reports. Essential for home sales, routine maintenance, and system health checks.", "color": "#4FD4A4" },
+        { "iconName": "Layers", "title": "New Installations", "description": "Expert design and installation of conventional and alternative septic systems. We handle permits, excavation, and startup.", "color": "#4FD4A4" },
+        { "iconName": "Wrench", "title": "Septic Repairs", "description": "Fast diagnosis and reliable repairs for any septic component. We fix problems right the first time to prevent future issues.", "color": "#1E7A45" },
+        { "iconName": "Wind", "title": "Drain Field Services", "description": "Drain field restoration, repair, and replacement. Save thousands versus full system replacement with our targeted solutions.", "color": "#F4C542" },
+        { "iconName": "AlertTriangle", "title": "Emergency Services", "description": "24/7 emergency response for septic backups and failures. Our rapid response team is always on standby for your urgent needs.", "color": "#BE2026", "urgent": true },
+        { "iconName": "Zap", "title": "Aerobic Systems", "description": "Installation and maintenance of advanced aerobic treatment systems. Eco-friendly solutions for properties where conventional systems fail.", "color": "#4FD4A4" },
+        { "iconName": "Trash2", "title": "Grease Trap Cleaning", "description": "Professional grease trap pumping and cleaning for restaurants and commercial facilities. Keep your business compliant and odor-free.", "color": "#25A55F" }
+      ]
+    }
+  }
+}

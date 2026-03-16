@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "septic-masters/contact-info-bar",
+  "version": "1.0.0",
+  "title": "Contact Info Bar",
+  "category": "septic-masters",
+  "description": "Horizontal 4-card contact information row with icon, title, and detail lines.",
+  "supports": { "html": false },
+  "textdomain": "septic-masters",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "items": {
+      "type": "array",
+      "items": { "type": "object" },
+      "default": [
+        { "iconName": "Phone", "title": "Phone", "line1": "(555) 123-4567", "line2": "Available 24/7 for emergencies", "href": "tel:+15551234567", "color": "#25A55F" },
+        { "iconName": "Mail", "title": "Email", "line1": "info@septicmasters.com", "line2": "Response within 1 business hour", "href": "mailto:info@septicmasters.com", "color": "#4FD4A4" },
+        { "iconName": "MapPin", "title": "Service Area", "line1": "Austin & Central Texas", "line2": "50+ mile radius from Austin", "href": "", "color": "#4FD4A4" },
+        { "iconName": "Clock", "title": "Business Hours", "line1": "Mon–Sat: 7:00am – 7:00pm", "line2": "24/7 Emergency Available", "href": "", "color": "#1E7A45" }
+      ]
+    }
+  }
+}

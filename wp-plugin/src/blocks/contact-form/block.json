@@ -1,0 +1,66 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "septic-masters/contact-form",
+  "version": "1.0.0",
+  "title": "Contact Form",
+  "category": "septic-masters",
+  "description": "Full contact form with sidebar showing emergency card, why-choose-us list, and service hours.",
+  "supports": { "html": false },
+  "textdomain": "septic-masters",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "formTitle": {
+      "type": "string",
+      "default": "Request a Quote or Service"
+    },
+    "formSubtext": {
+      "type": "string",
+      "default": "Fill out the form and we'll get back to you within 1 hour during business hours."
+    },
+    "phone": {
+      "type": "string",
+      "default": "(555) 123-4567"
+    },
+    "email": {
+      "type": "string",
+      "default": "info@septicmasters.com"
+    },
+    "serviceOptions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": [
+        "Septic Tank Pumping",
+        "Septic Inspection",
+        "New Installation",
+        "Septic Repair",
+        "Drain Field Service",
+        "Emergency Service",
+        "Aerobic System",
+        "Grease Trap Cleaning",
+        "General Inquiry"
+      ]
+    },
+    "whyItems": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": [
+        "Free estimates on all services",
+        "Same-day service available",
+        "Licensed & insured technicians",
+        "No hidden fees ever",
+        "Satisfaction guaranteed",
+        "Local & family-owned"
+      ]
+    },
+    "hours": {
+      "type": "array",
+      "items": { "type": "object" },
+      "default": [
+        { "day": "Monday – Friday", "hours": "7:00am – 7:00pm" },
+        { "day": "Saturday", "hours": "8:00am – 5:00pm" },
+        { "day": "Sunday", "hours": "Emergency Only" }
+      ]
+    }
+  }
+}

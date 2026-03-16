@@ -1,0 +1,16 @@
+{
+  "name": "septic-masters-blocks",
+  "version": "1.0.0",
+  "description": "Custom Gutenberg blocks for the Septic Masters headless WordPress site.",
+  "private": true,
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^29.0.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.28.6"
+  }
+}

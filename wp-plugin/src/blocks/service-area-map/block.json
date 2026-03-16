@@ -1,0 +1,64 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "septic-masters/service-area-map",
+  "version": "1.0.0",
+  "title": "Service Area Map",
+  "category": "septic-masters",
+  "description": "Dark two-column section with area pills and a neighborhood image.",
+  "supports": { "html": false },
+  "textdomain": "septic-masters",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "sectionLabel": {
+      "type": "string",
+      "default": "Service Areas"
+    },
+    "headline": {
+      "type": "string",
+      "default": "Proudly Serving Central Texas"
+    },
+    "subtext": {
+      "type": "string",
+      "default": "We serve Austin and all surrounding communities within a 50-mile radius. Not sure if we cover your area? Just give us a call!"
+    },
+    "imageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "badgeText": {
+      "type": "string",
+      "default": "50+ Mile Coverage Area"
+    },
+    "badgeSubtext": {
+      "type": "string",
+      "default": "Serving all of Central Texas"
+    },
+    "ctaText": {
+      "type": "string",
+      "default": "View All Service Areas"
+    },
+    "ctaUrl": {
+      "type": "string",
+      "default": "/service-areas"
+    },
+    "areas": {
+      "type": "array",
+      "items": { "type": "object" },
+      "default": [
+        { "name": "Austin", "primary": true },
+        { "name": "Round Rock", "primary": true },
+        { "name": "Cedar Park", "primary": true },
+        { "name": "Georgetown", "primary": true },
+        { "name": "Pflugerville", "primary": false },
+        { "name": "Leander", "primary": false },
+        { "name": "Kyle", "primary": false },
+        { "name": "Buda", "primary": false },
+        { "name": "Bastrop", "primary": false },
+        { "name": "Dripping Springs", "primary": false },
+        { "name": "Wimberley", "primary": false },
+        { "name": "San Marcos", "primary": false }
+      ]
+    }
+  }
+}

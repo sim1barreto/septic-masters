@@ -72,7 +72,7 @@ export function AboutStoryBlock({ attrs }: Props) {
             className="relative"
           >
             <div className="relative rounded-3xl overflow-hidden aspect-square shadow-2xl bg-[#1a3a6b]">
-              {imageUrl && (
+              {(imageUrl as string) && (
                 <img
                   src={imageUrl as string}
                   alt="Our team"

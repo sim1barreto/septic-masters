@@ -1,0 +1,100 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "septic-masters/services-detail",
+  "version": "1.0.0",
+  "title": "Services Detail",
+  "category": "septic-masters",
+  "description": "Detailed service cards with icon, description, benefits list, pricing, and CTA buttons.",
+  "supports": { "html": false },
+  "textdomain": "septic-masters",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "phone": {
+      "type": "string",
+      "default": "(555) 123-4567"
+    },
+    "ctaUrl": {
+      "type": "string",
+      "default": "/contact"
+    },
+    "services": {
+      "type": "array",
+      "items": { "type": "object" },
+      "default": [
+        {
+          "iconName": "Droplets",
+          "title": "Septic Tank Pumping",
+          "color": "#25A55F",
+          "description": "Routine septic tank pumping is the single most important thing you can do to protect your system. We recommend pumping every 3–5 years depending on household size and tank capacity.",
+          "benefits": ["Prevents system backups and failure", "Extends system lifespan by years", "Protects your property investment", "Complies with state regulations"],
+          "price": "Starting at $299",
+          "time": "1–3 hours"
+        },
+        {
+          "iconName": "Search",
+          "title": "Septic Inspections",
+          "color": "#4FD4A4",
+          "description": "Our thorough septic inspections include a full system evaluation, tank pumping if needed, video inspection, and a detailed written report — essential for home purchases and routine maintenance.",
+          "benefits": ["Full written inspection report", "Photo and video documentation", "Required for real estate transactions", "Identify problems before they escalate"],
+          "price": "Starting at $199",
+          "time": "2–4 hours"
+        },
+        {
+          "iconName": "Layers",
+          "title": "New System Installations",
+          "color": "#4FD4A4",
+          "description": "Planning a new home or replacing a failed system? Our installation team handles everything — site evaluation, permit acquisition, excavation, system installation, and final inspection.",
+          "benefits": ["Permit handling included", "All system types available", "Engineered for your property", "Full warranty on installation"],
+          "price": "Custom quote required",
+          "time": "2–5 days"
+        },
+        {
+          "iconName": "Wrench",
+          "title": "Septic Repairs",
+          "color": "#1E7A45",
+          "description": "From broken pipes to failing pumps, our diagnostic team quickly identifies and fixes any septic system issue. We carry common parts on our trucks for same-day repairs whenever possible.",
+          "benefits": ["Same-day repairs available", "Transparent diagnosis and pricing", "Quality parts and workmanship", "All repairs under warranty"],
+          "price": "Starting at $149",
+          "time": "Varies by repair"
+        },
+        {
+          "iconName": "Wind",
+          "title": "Drain Field Services",
+          "color": "#F4C542",
+          "description": "A failing drain field doesn't always mean full replacement. Our restoration services can extend the life of your drain field at a fraction of the cost of a new system installation.",
+          "benefits": ["Drain field restoration available", "Save vs. full replacement", "Aeration and bio-treatment", "New installation if needed"],
+          "price": "Starting at $499",
+          "time": "1–3 days"
+        },
+        {
+          "iconName": "AlertTriangle",
+          "title": "24/7 Emergency Service",
+          "color": "#BE2026",
+          "description": "Septic emergencies don't wait for business hours. Our emergency team is on standby around the clock, ready to respond within 1–2 hours to sewage backups, overflows, and system failures.",
+          "benefits": ["1–2 hour average response time", "No after-hours surcharges", "Available 365 days a year", "Emergency repairs on-site"],
+          "price": "Call for emergency pricing",
+          "time": "1–2 hour response"
+        },
+        {
+          "iconName": "Zap",
+          "title": "Aerobic Systems",
+          "color": "#4FD4A4",
+          "description": "Aerobic treatment systems are ideal for smaller lots, poor soil conditions, or environmentally sensitive areas. We install, maintain, and repair all major aerobic system brands.",
+          "benefits": ["Installation on challenging properties", "Annual maintenance contracts", "State-required biannual inspections", "System upgrades available"],
+          "price": "Starting at $8,000 installed",
+          "time": "Varies by project"
+        },
+        {
+          "iconName": "Trash2",
+          "title": "Grease Trap Cleaning",
+          "color": "#25A55F",
+          "description": "Restaurants and food service businesses require regular grease trap maintenance to stay compliant and odor-free. We offer scheduled service plans with service certificates for inspectors.",
+          "benefits": ["Service certificates provided", "Flexible scheduling available", "All trap sizes serviced", "Commercial and residential"],
+          "price": "Starting at $199",
+          "time": "1–2 hours"
+        }
+      ]
+    }
+  }
+}

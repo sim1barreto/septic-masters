@@ -78,7 +78,7 @@ export function PromiseCTABlock({ attrs }: Props) {
           </div>
 
           <div className="relative rounded-3xl overflow-hidden aspect-[4/3] shadow-2xl bg-[#1a3a6b]">
-            {imageUrl && (
+            {(imageUrl as string) && (
               <img src={imageUrl as string} alt="Happy customers" className="w-full h-full object-cover" />
             )}
             <div className="absolute bottom-6 right-6 flex items-center gap-2 px-5 py-3 rounded-2xl bg-white/95 shadow-xl">

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "septic-masters/emergency-banner",
+  "version": "1.0.0",
+  "title": "Emergency Banner",
+  "category": "septic-masters",
+  "description": "Full-width red emergency CTA section with phone button and feature list.",
+  "supports": { "html": false },
+  "textdomain": "septic-masters",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "badgeLabel": {
+      "type": "string",
+      "default": "24/7 Emergency Response"
+    },
+    "headline": {
+      "type": "string",
+      "default": "Septic Emergency?\nWe're Available Now."
+    },
+    "subtext": {
+      "type": "string",
+      "default": "Don't wait for a small problem to become a major disaster. Our emergency team is on standby 24 hours a day, 7 days a week — including holidays."
+    },
+    "phone": {
+      "type": "string",
+      "default": "(555) 123-4567"
+    },
+    "contactUrl": {
+      "type": "string",
+      "default": "/contact"
+    },
+    "features": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": [
+        "Rapid 2-hour response",
+        "No after-hours surcharge",
+        "All areas covered",
+        "Guaranteed same-day fix"
+      ]
+    }
+  }
+}

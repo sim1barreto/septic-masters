@@ -1,0 +1,34 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "septic-masters/cta-banner",
+  "version": "1.0.0",
+  "title": "CTA Banner",
+  "category": "septic-masters",
+  "description": "Dark gradient bottom CTA section with headline, subtext, phone, and link button.",
+  "supports": { "html": false },
+  "textdomain": "septic-masters",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "headline": {
+      "type": "string",
+      "default": "Ready to Schedule Service?"
+    },
+    "subtext": {
+      "type": "string",
+      "default": "Most appointments available within 24 hours."
+    },
+    "phone": {
+      "type": "string",
+      "default": "(555) 123-4567"
+    },
+    "ctaText": {
+      "type": "string",
+      "default": "Request a Quote"
+    },
+    "ctaUrl": {
+      "type": "string",
+      "default": "/contact"
+    }
+  }
+}

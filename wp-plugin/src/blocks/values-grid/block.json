@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "septic-masters/values-grid",
+  "version": "1.0.0",
+  "title": "Values Grid",
+  "category": "septic-masters",
+  "description": "4-card values grid with icon, title, and description per card.",
+  "supports": { "html": false },
+  "textdomain": "septic-masters",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "sectionLabel": {
+      "type": "string",
+      "default": "Our Values"
+    },
+    "headline": {
+      "type": "string",
+      "default": "What We Stand For"
+    },
+    "values": {
+      "type": "array",
+      "items": { "type": "object" },
+      "default": [
+        { "iconName": "Shield", "title": "Integrity", "description": "We tell you what you need, not what makes us the most money.", "color": "#25A55F" },
+        { "iconName": "Award", "title": "Excellence", "description": "We hold ourselves to the highest standard in every job, big or small.", "color": "#4FD4A4" },
+        { "iconName": "Heart", "title": "Care", "description": "We treat your home and family with the same respect as our own.", "color": "#1E7A45" },
+        { "iconName": "Leaf", "title": "Sustainability", "description": "Environmentally responsible practices in everything we do.", "color": "#4FD4A4" }
+      ]
+    }
+  }
+}

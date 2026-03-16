@@ -1,0 +1,52 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "septic-masters/promise-cta",
+  "version": "1.0.0",
+  "title": "Promise CTA",
+  "category": "septic-masters",
+  "description": "Two-column satisfaction guarantee section with checklist, phone CTA, and customer image.",
+  "supports": { "html": false },
+  "textdomain": "septic-masters",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "sectionLabel": {
+      "type": "string",
+      "default": "Our Promise"
+    },
+    "headline": {
+      "type": "string",
+      "default": "Your Satisfaction Is Our Guarantee"
+    },
+    "subtext": {
+      "type": "string",
+      "default": "We're not done until you're completely satisfied. Every service is backed by our satisfaction guarantee — if something isn't right, we'll fix it at no charge."
+    },
+    "guarantees": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": [
+        "100% satisfaction or we return free of charge",
+        "Written warranty on all labor and parts",
+        "Transparent pricing — no hidden fees ever",
+        "Real people answer every call"
+      ]
+    },
+    "phone": {
+      "type": "string",
+      "default": "(555) 123-4567"
+    },
+    "ctaText": {
+      "type": "string",
+      "default": "Get a Quote"
+    },
+    "ctaUrl": {
+      "type": "string",
+      "default": "/contact"
+    },
+    "imageUrl": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}

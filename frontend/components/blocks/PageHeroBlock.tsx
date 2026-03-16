@@ -51,7 +51,7 @@ export function PageHeroBlock({ attrs }: Props) {
 
   return (
     <section className="relative pt-32 pb-24 overflow-hidden" style={{ background: '#0B2545' }}>
-      {imageUrl && (
+      {(imageUrl as string) && (
         <div className="absolute inset-0">
           <img src={imageUrl as string} alt="" className="w-full h-full object-cover opacity-15" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0B2545] to-[#0B2545]/80" />

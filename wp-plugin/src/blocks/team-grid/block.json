@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "septic-masters/team-grid",
+  "version": "1.0.0",
+  "title": "Team Grid",
+  "category": "septic-masters",
+  "description": "Grid of team member cards with initials avatar, role, and experience.",
+  "supports": { "html": false },
+  "textdomain": "septic-masters",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "sectionLabel": {
+      "type": "string",
+      "default": "Meet the Team"
+    },
+    "headline": {
+      "type": "string",
+      "default": "The Experts Behind Every Job"
+    },
+    "members": {
+      "type": "array",
+      "items": { "type": "object" },
+      "default": [
+        { "name": "Mike Torres", "role": "Owner & Master Technician", "experience": "15 years", "initials": "MT", "color": "#25A55F" },
+        { "name": "Carlos Rivera", "role": "Senior Technician", "experience": "10 years", "initials": "CR", "color": "#4FD4A4" },
+        { "name": "Jake Williams", "role": "Installation Specialist", "experience": "8 years", "initials": "JW", "color": "#4FD4A4" },
+        { "name": "Amy Chen", "role": "Office Manager", "experience": "5 years", "initials": "AC", "color": "#1E7A45" }
+      ]
+    }
+  }
+}

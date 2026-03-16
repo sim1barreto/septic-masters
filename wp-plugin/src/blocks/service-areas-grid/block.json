@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "septic-masters/service-areas-grid",
+  "version": "1.0.0",
+  "title": "Service Areas Grid",
+  "category": "septic-masters",
+  "description": "Grid of primary service area cards with city, county, description, and service highlights.",
+  "supports": { "html": false },
+  "textdomain": "septic-masters",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "sectionLabel": {
+      "type": "string",
+      "default": "Primary Coverage"
+    },
+    "headline": {
+      "type": "string",
+      "default": "Our Core Service Cities"
+    },
+    "subtext": {
+      "type": "string",
+      "default": "These areas receive our highest priority scheduling and fastest response times."
+    },
+    "phone": {
+      "type": "string",
+      "default": "(555) 123-4567"
+    },
+    "ctaUrl": {
+      "type": "string",
+      "default": "/contact"
+    },
+    "areas": {
+      "type": "array",
+      "items": { "type": "object" },
+      "default": [
+        { "city": "Austin", "county": "Travis County", "description": "Our home base. We serve all Austin neighborhoods and zip codes with priority scheduling.", "services": ["Residential & Commercial", "Same-day service", "Emergency response < 1 hr"], "color": "#25A55F" },
+        { "city": "Round Rock", "county": "Williamson County", "description": "One of our most active service zones. Full-service coverage for all Round Rock neighborhoods.", "services": ["Same-day availability", "Full installation service", "Emergency response"], "color": "#4FD4A4" },
+        { "city": "Cedar Park", "county": "Williamson County", "description": "Complete septic services for Cedar Park's growing residential communities.", "services": ["Residential specialists", "Aerobic system experts", "Fast response times"], "color": "#4FD4A4" },
+        { "city": "Georgetown", "county": "Williamson County", "description": "Serving Georgetown's established neighborhoods and new developments alike.", "services": ["Historic district experience", "New construction", "All system types"], "color": "#1E7A45" },
+        { "city": "Pflugerville", "county": "Travis County", "description": "Reliable septic services for Pflugerville's expanding suburban communities.", "services": ["Suburban specialists", "Full-service coverage", "Emergency available"], "color": "#F4C542" },
+        { "city": "Leander", "county": "Williamson County", "description": "Serving Leander's fast-growing communities with experienced local technicians.", "services": ["New development experience", "Full installations", "Quick scheduling"], "color": "#25A55F" }
+      ]
+    }
+  }
+}

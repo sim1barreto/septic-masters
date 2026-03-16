@@ -1,0 +1,49 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "septic-masters/lead-capture",
+  "version": "1.0.0",
+  "title": "Lead Capture Form",
+  "category": "septic-masters",
+  "description": "Contact/quote request form with sidebar contact info.",
+  "supports": { "html": false },
+  "textdomain": "septic-masters",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "sectionLabel": {
+      "type": "string",
+      "default": "Get a Free Quote"
+    },
+    "headline": {
+      "type": "string",
+      "default": "Ready to Get Started? We're Ready Too."
+    },
+    "subtext": {
+      "type": "string",
+      "default": "Fill out the form and we'll get back to you within 1 hour during business hours, or call us for an immediate response."
+    },
+    "phone": {
+      "type": "string",
+      "default": "(555) 123-4567"
+    },
+    "email": {
+      "type": "string",
+      "default": "info@septicmasters.com"
+    },
+    "serviceOptions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": [
+        "Septic Tank Pumping",
+        "Septic Inspection",
+        "New Installation",
+        "Septic Repair",
+        "Drain Field Service",
+        "Emergency Service",
+        "Aerobic System",
+        "Grease Trap Cleaning",
+        "Other"
+      ]
+    }
+  }
+}

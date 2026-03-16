@@ -1,0 +1,47 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "septic-masters/faq",
+  "version": "1.0.0",
+  "title": "FAQ Accordion",
+  "category": "septic-masters",
+  "description": "Two-column FAQ section with accordion answers.",
+  "supports": { "html": false },
+  "textdomain": "septic-masters",
+  "editorScript": "file:./index.js",
+  "attributes": {
+    "sectionLabel": {
+      "type": "string",
+      "default": "FAQ"
+    },
+    "headline": {
+      "type": "string",
+      "default": "Frequently Asked Questions"
+    },
+    "subtext": {
+      "type": "string",
+      "default": "Can't find the answer you're looking for? Give us a call or send us a message."
+    },
+    "phone": {
+      "type": "string",
+      "default": "(555) 123-4567"
+    },
+    "email": {
+      "type": "string",
+      "default": "info@septicmasters.com"
+    },
+    "faqs": {
+      "type": "array",
+      "items": { "type": "object" },
+      "default": [
+        { "q": "How often should I have my septic tank pumped?", "a": "Most septic tanks need pumping every 3–5 years, but this varies based on tank size, household size, and water usage. We recommend an annual inspection to monitor levels and pump when needed." },
+        { "q": "What are the signs my septic system needs service?", "a": "Common warning signs include: slow drains throughout the home, gurgling sounds in pipes, sewage odors inside or outside, wet or soggy areas near the drain field, and sewage backing up into toilets or drains." },
+        { "q": "How much does septic pumping cost?", "a": "Septic pumping typically costs $300–$600 for a standard residential tank. Pricing depends on tank size, accessibility, and your location. We provide free, no-obligation quotes before any work begins." },
+        { "q": "Do I need to be home during the service?", "a": "For most standard services, you don't need to be home, but you do need to know the location of your tank access lid. We always communicate with you before and after every visit." },
+        { "q": "What should I avoid putting in my septic system?", "a": "Avoid flushing anything other than human waste and toilet paper. Harmful items include wipes, feminine products, cotton balls, medications, cooking grease, and harsh chemical cleaners." },
+        { "q": "Do you offer inspections for home purchases?", "a": "Absolutely. We perform thorough pre-purchase septic inspections and provide detailed written reports within 24 hours." },
+        { "q": "How quickly can you respond to an emergency?", "a": "Our emergency team is available 24/7 and typically arrives within 1–2 hours of your call. We charge no extra after-hours fees for emergency dispatch." }
+      ]
+    }
+  }
+}
